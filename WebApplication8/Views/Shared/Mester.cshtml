@@ -1,0 +1,259 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+</head>
+
+<body class="MainPage  color  ">
+
+
+
+
+    <div class="Header">
+        <div class="  col-2 text-center fixed-Image Right">
+            <img src="~/css/Applogo.png" style="height:40px;" />
+            <p id="timer"></p>
+        </div>
+        <div class="   col-2 text-center fixed-Image Left">
+            <img src="~/css/UserImage.png" class="UserImage" />
+            <p class="modir">مدیریت (Admin) (کتابخانه عمومی سنایی)</p>
+        </div>
+        <div class="Row">
+            <div id="MainMenus" class="col col-8 text-center col-3">
+
+                <ul class="sub-menu">
+                    <li>
+                        <a>صفحه اصلی</a>
+
+                    </li>
+                    <li class="dropdown">
+                        <a herf="#">
+                            تعاریف اولیه
+                        </a>
+                        <ul class="c">
+                            <li>
+                                <a>مخازن</a>
+                            </li>
+                            <li>
+                                <a id="AllFile">انواع پرونده</a>
+                            </li>
+                            <li>
+                                <a>دانشکده‌ها</a>
+                            </li>
+                            <li>
+                                <a>Menu_Z3950Hosts</a>
+                            </li>
+                            <li>
+                                <a>کتابخانه‌ها</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>سازماندهی</a>
+                        <ul class="c">
+                            <li>
+                                <a>کاربرگه فهرست نويسي</a>
+                            </li>
+                            <li>
+                                <a>ويرايش از طريق جدول مدارک</a>
+                            </li>
+                            <li>
+                                <a>ورودي استاندارد آريان</a>
+                            </li>
+                            <li>
+                                <a>خروجي استاندارد آريان</a>
+                            </li>
+                            <li>
+                                <a>ورودي هاي استاندارد مستقيم</a>
+                            </li>
+                            <li>
+                                <a>ورودي هاي استاندارد</a>
+                            </li>
+                            <li>
+                                <a>ورودي اکسل</a>
+                            </li>
+                            <li>
+                                <a>خروجی اکسل</a>
+                            </li>
+                            <li>
+                                <a>مدارک ارسالی اعضا</a>
+                            </li>
+                            <li>
+                                <a>تنظيمات</a>
+                            </li>
+                            <li>
+                                <a>ورودی محتوای دیجیتال</a>
+                            </li>
+                            <li>
+                                <a>مدیریت پیشنهادات خرید</a>
+                            </li>
+                            <li>
+                                <a> مرور</a>
+                            </li>
+                            <li>
+                                <a>آمار امتیاز دهی مدارک</a>
+                            </li>
+                            <li>
+                                <a>مدیریت نظرات</a>
+                            </li>
+                            <li>
+                                <a> مدیریت برشی از کتاب ها</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>بازیابی اطلاعات</a>
+                        <ul class="c">
+                            <li>
+                                <a>جستجوي ساده</a>
+                            </li>
+                            <li>
+                                <a>جستجوي پيشرفته</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>چرخه مدارک</a>
+                        <ul class="c">
+                            <li>
+                                <a>ثبت عضو</a>
+                            </li>
+                            <li>
+                                <a>ورود اعضا از طريق اکسل</a>
+                            </li>
+                            <li>
+                                <a>جدول تصحيح اعضاء</a>
+                            </li>
+                            <li>
+                                <a>ميز امانت</a>
+                            </li>
+                            <li>
+                                <a>مدیریت درخواست‌ها</a>
+                            </li>
+                            <li>
+                                <a>مدیریت رزروها</a>
+                            </li>
+                            <li>
+                                <a>کارت عضویت</a>
+                            </li>
+                            <li>
+                                <a>لیست درخواست ثبت‌نام</a>
+                            </li>
+                            <li>
+                                <a>گروه‌ها</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>گزارشات</a>
+                        <ul class="c">
+                            <li>
+                                <a>گزارشات تخصصی</a>
+                            </li>
+                            <li>
+                                <a>گزارشات امانت</a>
+                            </li>
+                            <li>
+                                <a>گزارشات کاربردی و مدیریتی</a>
+                            </li>
+                            <li>
+                                <a>خروجی خطی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a>مدیریت سامانه</a>
+                        <ul class="c">
+                            <li>
+                                <a>ليست پرداخت‌ها</a>
+                            </li>
+                            <li>
+                                <a>مديريت پورتال</a>
+                            </li>
+                            <li>
+                                <a>مدیریت پورتال جامع</a>
+                            </li>
+                            <li>
+                                <a>ليست متغييرها</a>
+                            </li>
+                            <li>
+                                <a>پيام‌ها</a>
+                            </li>
+                            <li>
+                                <a>گروه هاي کاربري</a>
+                            </li>
+                            <li>
+                                <a>مديريت کاربران</a>
+                            </li>
+                            <li>
+                                <a>تغيير کلمه عبور</a>
+                            </li>
+                            <li>
+                                <a>منوي هاي برنامه</a>
+                            </li>
+                            <li>
+                                <a>مشاهده فعاليت‌هاي کاربران</a>
+                            </li>
+                            <li>
+                                <a>تعيين سطوح دسترسي</a>
+                            </li>
+                            <li>
+                                <a>تنظیمات ایمیل</a>
+                            </li>
+                            <li>
+                                <a>تنظیمات پنل پیامکی</a>
+                            </li>
+                            <li>
+                                <a>تنظیمات فایل های چندرسانه ای</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>راهنما</a>
+                    </li>
+                    <li>
+                        <a onclick="exit()">خروج</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+   
+
+
+    <script>
+        document.getElementById("timer").innerHTML = new Date().toLocaleDateString("fa", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+        });
+        function exit() {
+            window.open("https://localhost:7188/")
+        }
+        document.getElementById("AllFile").addEventListener("click", function (event) {
+            event.preventDefault(); // جلوگیری از رفتار پیش‌فرض لینک (باز شدن صفحه جدید)
+            window.open("https://localhost:7188/MainPage/labtab")
+        });
+    </script>
+
+</body>
+
+
+
+
+</html>

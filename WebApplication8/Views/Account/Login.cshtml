@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<!DOCTYPE html>
+    <html>
+    <head>
+    </head>
+    <body class="login-body">
+    <div class="grid">
+        <div class="Row-login">
+            <div class="coll col-offset-4 col-4">
+                <div class="card" style="margin-top:10%;">
+                    <div class="card-header">
+                        <h2>ورود</h2>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" asp-action="Login">
+                                <div class="username">
+                                    <input type="text" id="username" name="username" class="col-in col-12 " required placeholder="نام کاربری" />
+                                </div>
+                                <div class="password">
+                                    <input type="password" id="password" name="password" class="col-in col-12 " required placeholder="گزرواژه" />
+                                </div>
+                                <button class="btn" type="submit">ورود</button>
+                            </form>
+
+                            @if (ViewBag.ErrorMessage != null)
+
+                            {
+                                <p style="color: red;">@ViewBag.ErrorMessage</p>
+
+                            }
+                            <div class="text-center">
+                                <h2>شرکت پیام حنان</h2>
+                                <h2>نرم افزار مدیریت کتابخانه آریان نسخه 6.5.1</h2>
+                                <h2>کتابخانه عمومی کیش</h2>
+                            </div>
+                        </div>
+          
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

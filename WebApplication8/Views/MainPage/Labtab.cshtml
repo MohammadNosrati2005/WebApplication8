@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/views/shared/mester.cshtml";
+}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl; /* برای متن‌های فارسی */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* حذف فاصله بین سلول‌ها */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: white; /* رنگ پس‌زمینه برای هدر */
+        }
+
+        td {
+            color: #067b9b;
+        }
+
+        tr:hover {
+            background-color: #e2e2e2; /* تغییر رنگ هنگام هاور */
+        }
+    </style>
+    <h1>لیست محصولات</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ردیف</th>
+                <th>نوع</th>
+                <th>عنوان </th>
+                <th>دسته بندی</th>
+                <th>عملیات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>۱</td>
+                <td> Workflows</td>
+                <td>فرایند</td>
+                <td>آیتم اصلی</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>۲</td>
+                <td>AttachmentViewer</td>
+                <td>نمایش پیوست</td>
+                <td>آیتم اصلی</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>۳</td>
+                <td>Places</td>
+                <td>محل نگهداری</td>
+                <td>آیتم اصلی</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>۴</td>
+                <td>EmailSetting</td>
+                <td>پست الکترونیک</td>
+                <td>آیتم اصلی</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    

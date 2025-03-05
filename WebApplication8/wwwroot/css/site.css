@@ -1,0 +1,299 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+
+
+.MainPage{
+    direction:rtl;
+}
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.username{
+    margin:10px;
+}
+.password{
+    margin:10px;
+}
+.Header {
+    padding: 5px;
+    border: 0;
+    box-shadow: #9f9f9f 0 0 6px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+.Row{
+    display:block;
+}
+.col-2 {
+    width: 16.66666667% !important;
+}
+.text-center{
+    text-align:center;
+}
+.col {
+
+    padding: 0 5px;
+    transition: width 300ms ease-in;
+}
+#MainMenus {
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-right: 36px;
+    margin-top: 15px;
+}
+.color {
+    color: #067b9b;
+}
+.sub-menu{
+    margin:0;
+    padding:0;
+}
+#MainMenus  ul  li{
+    position:revert;
+    margin:0;
+    Padding:0;
+
+}
+#MainMenus>ul>li{
+display:inline-block;
+}
+li{
+list-style:none;
+}
+    
+
+#MainMenus ul li a {
+    display: block;
+  
+    text-decoration: none;
+}
+#MainMenus > ul > li > a {
+    padding: 13px !important;
+    font-size: 13pt;
+}
+a{
+    cursor:pointer;
+}
+.UserImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    border: solid thin #333;
+}
+
+    .modir {
+       
+        margin: 5px 0 10px;
+    }
+
+     
+        
+    
+
+    .fixed-Image {
+        position: fixed;
+    }
+
+    .Left {
+        left: 0;
+        margin:-4px;
+    }
+
+    .Right {
+        right: 0;
+        margin:-6px;
+    }
+
+    .col-3 {
+        margin: 0 32px;
+        padding: 20px;
+    }
+.grid {
+    padding: 0;
+    color: #067b9b;
+    position: relative
+}
+.Row-login {
+    display: block;
+    content: '';
+    clear: both;
+}
+.coll {
+    float: right;
+    width:36%;
+
+   
+}
+.col-in {
+    padding: 9px 9px;
+    width:100%
+}
+.col-offset-4 {
+    margin-right: 33.33333333% !important;
+}
+.col-4 {
+ margin-right: 33.33333333% !important;
+}
+.card {
+    background: #fff;
+    padding: 0;
+    box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.11), 0 .6px 1.8px 0 rgba(0,0,0,.1);
+    margin-bottom: 15px;
+    border: solid 0 #1bb9f5;
+    border-right-width: 0px;
+    border-right-width: 3px;
+    display: block;
+}
+    .card .card-header {
+        padding-bottom: 0;
+    }
+ .card-header>h2 {
+    font-size: 20pt !important;
+   
+    text-align:center;
+}
+ .text-center>h2{
+     font-size:14pt;
+     margin:10px;
+ }
+.card .card-body {
+    display: block;
+    padding: 15px;
+}
+.form .col {
+    margin-bottom: 10px !important;
+}
+.col.col-12 {
+    width: 100% !important;
+}
+.form input {
+    display: block;
+    
+    padding: 5px !important;
+    border: #ccc solid thin !important;
+   
+    box-shadow: rgba(220,220,220,.2) 2px 2px 2px inset;
+   
+    border-radius: 4px !important;
+    min-height: 32px;
+    background: #fff;
+}
+.btn {
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 4px;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132), 0 .6px 1.8px 0 rgba(0,0,0,.108);
+    border: 0 solid;
+    text-align: center;
+    transition: background 200ms ease-in;
+    background: #1bb9f5;
+    color: #fff !important;
+    width:98%;
+}
+.login-body{
+    direction:rtl;
+}
+#options{
+    width:100%;
+    height:35px;
+    font-size:12pt;
+}
+#options> option{
+    font-size:9pt;
+}
+
+.text {
+    width: 60%;
+    margin: 178px auto;
+    text-align: justify;
+    font-size: 15pt;
+}
+h4 {
+    margin: 5px 0 10px !important;
+}
+.maintable {
+    filter: blur(0);
+    transition: filter 100ms ease-in;
+}
+.MainZone {
+    width: 100%;
+    vertical-align: top;
+    padding: 100px 60px 0 60px;
+    background-size: cover;
+}
+.image{
+    display:block
+}
+.col-6{
+    float:right;
+    text-align:center;
+    padding:0 5px;
+    width:25%;
+}
+.col-6 > img{
+    height:120px;
+}
+.c {
+    display: none;
+    content: '';
+    position: absolute;
+    
+    width: 200px;
+    background-color:rgb(255 , 251 , 251 , 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+    padding:0px;
+    margin:0;
+    top:90%
+}
+  .sub-menu > .dropdown:hover >.c{
+    display:block;
+}
+.c > li {
+    position:relative;
+}
+  .sub-menu> li> a:hover{
+    color:#012c37;
+    box-shadow:unset;
+}
+ .c>li>a:hover{
+     color:#012c37;
+ }
+ .c>li>a{
+     padding:6px;
+ }

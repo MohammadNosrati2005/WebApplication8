@@ -1,0 +1,42 @@
+﻿<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<!DOCTYPE html>
+    <html>
+    <head>
+   
+    </head>
+    <body style="direction:rtl;">
+    <div class="grid">
+        <div class="Row-login">
+            <div class="coll col-offset-4 col-4">
+                <div class="card" style="margin-top:10%;">
+                    <div class="card-header">
+                        <h2 style="font-size:20pt; margin:20px;">انتخاب کتابخانه</h2>
+                        <select id="options" name="options">
+                        <option  value="option1">لطفا انتخاب کنید.</option>
+                        <option value="option2">کتابخانه عمومی سنایی</option>
+                        <option value="option3">کتابخانه عمومی میر مهنا</option>
+                        <option value="option4">کتابخانه عمومی میلاد </option>
+                        <option value="option4">کتابخانه کودک و نوجوان سنایی </option>
+                        </select>
+                        <button onclick="opennew()" class="btn"> ورود</button>
+                    </div>
+                    
+                </div>
+                <div class="text-center">
+                    <h2>شرکت پیام حنان</h2>
+                    <h2>نرم افزار مدیریت کتابخانه آریان نسخه 6.5.1</h2>
+                    <h2>کتابخانه عمومی کیش</h2>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        function opennew() 
+        {
+            window.open("https://localhost:7188/MainPage/Main");
+        }
+    </script>
+    </body>
+    </html>
