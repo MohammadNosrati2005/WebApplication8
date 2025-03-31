@@ -1,0 +1,92 @@
+﻿@{
+    Layout = "~/views/shared/mester.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+ <div class="all">
+     <div class="new">
+         <span>جدید</span>
+            <div class="cansel">
+                <span class="fa fa-times"></span>
+            </div>
+     </div>
+    
+     <div class="b">
+            <div style="margin: 30px 0 0 0;">
+             <span>
+                 نام 
+             </span>
+             <input class="namef" type="text" name="name" value="" />
+         </div>
+         <div style=" margin:25px 0 0 0">
+             <span>نام به لاتین</span>
+             <input class="namel" type="text" name="name" value="" />
+         </div>
+     </div>
+     <div class="end">
+         <button class="save"> ذخیره</button>
+     </div>
+ </div>
+    </body>
+    </html>
+    <style>
+        .b{
+        text-align: start;
+        margin: 32px 13px 0 0;
+        font-size: 20px;
+        }
+        .new{
+        background-color: #e7dfdf;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: #c4c4c4 1px 1px 5px 1px;
+        padding:7px;
+    }
+        .all{
+        background: #fffbfb;
+        width: 42%;
+        margin: 100px auto;
+        }
+        .namef{
+        margin: 5px 80px 10px 10px;
+        padding: 10px;
+        width: 77%;
+        border-radius: 7px;
+    }
+        .namel{
+        margin: 3px 27px 10px 10px;
+        padding: 10px;
+        width: 77%;
+        border-radius: 10px;
+    }
+        .save{
+        padding: 7px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0;
+        display: inline-block;
+        text-decoration: none;
+        box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132), 0 .6px 1.8px 0 rgba(0,0,0,.108);
+        border: 0 solid;
+        text-align: center;
+        transition: background 200ms ease-in;
+        background: #1bb9f5;
+        color: #fff !important;
+        }
+        .end{
+        background-color: #e7dfdf;
+        padding: 12px;
+        border-radius: 3px;
+        margin: 3px;
+        text-align: end;
+        }
+        .cansel{
+        text-align: end;
+        color: red;
+        }
+    </style>

@@ -22,17 +22,20 @@ namespace WebApplication8.Controllers
             return View();
         }
        
-        
-            public IActionResult Labtab()
-            {
-                var products = new List<Product>
+        public IActionResult labtab()
         {
-            new Product { Id = 1, firstname= "mohammad"  },
-            new Product { Id = 2, firstname = "nosrati"   }
-        };
+            return View();
+        }
+          
+       public IActionResult univercities()
+        {
+            return View();
+        }
 
-                return View(products);
-            }
+        public IActionResult newuniver()
+        {
+            return View();
+        }
         }
     }
 

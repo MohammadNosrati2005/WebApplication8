@@ -38,10 +38,10 @@
                                 <a>مخازن</a>
                             </li>
                             <li>
-                                <a id="AllFile">انواع پرونده</a>
+                                <a class="page-btn" data-url="https://localhost:7188/MainPage/labtab">انواع پرونده</a>
                             </li>
                             <li>
-                                <a>دانشکده‌ها</a>
+                                <a class="page-btn" data-url="https://localhost:7188/MainPage/univercities">دانشکده‌ها</a>
                             </li>
                             <li>
                                 <a>Menu_Z3950Hosts</a>
@@ -235,24 +235,18 @@
         @RenderBody()
     </div>
 
-   
 
+  
 
     <script>
-        document.getElementById("timer").innerHTML = new Date().toLocaleDateString("fa", {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
+        document.querySelectorAll('.page-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                window.open(this.getAttribute('data-url'), '_blank');
+            });
         });
-        function exit() {
-            window.open("https://localhost:7188/")
-        }
-        document.getElementById("AllFile").addEventListener("click", function (event) {
-            event.preventDefault(); // جلوگیری از رفتار پیش‌فرض لینک (باز شدن صفحه جدید)
-            window.open("https://localhost:7188/MainPage/labtab")
-        });
-         
     </script>
+       
+   
 
 </body>
 

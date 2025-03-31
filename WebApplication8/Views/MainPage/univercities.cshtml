@@ -1,0 +1,133 @@
+﻿@{
+    Layout = "~/views/shared/mester.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!DOCTYPE html>
+<html style="background:#f8f8f8">
+<head>
+    <title></title>
+</head>
+
+<body>
+    
+    <div class="table">
+        <h1>دانشکده ها </h1>
+        <div class="btnnew">
+            <button class="btn" data-url="https://localhost:7188/MainPage/newuniver" type="submit">جدید</button>
+        </div>
+        <table>
+
+            <tr>
+                <th title="نام ">
+                    <span>نام </span>
+                </th>
+                <th title="نام به لاتین ">
+                    <span>نام به لاتین</span>
+                </th>
+                <th title="عملیات ">
+                    <span>عملیات </span>
+                </th>
+            </tr>
+            <tr>
+                <td>سازمان</td>
+                <td>KFZO</td>
+                <td>
+                    <a href="#" style="color:#1bb9f5;" title="ویرایش">
+                        <i class="fa fa-edit"></i>
+                    </a>
+                    <a href="#" style="color:#dc3545;" title="حذف">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                </td>
+
+            </tr>
+            <tr>
+                <td>شرکت عمران و خدمات</td>
+                <td>conso</td>
+                <td>
+                    <a href="#" style="color:#1bb9f5;" title="ویرایش">
+                        <i class="fa fa-edit"></i>
+                    </a>
+                    <a href="#" style="color:#dc3545;" title="حذف">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                </td>
+
+            </tr>
+            <tr>
+                <td>شرکت سرمایه گذاری</td>
+                <td>Invest</td>
+                <td>
+                    <a href="#" style="color:#1bb9f5;" title="ویرایش">
+                        <i class="fa fa-edit"></i>
+                    </a>
+                    <a href="#" style="color:#dc3545;" title="حذف">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                </td>
+
+            </tr>
+            
+        </table>
+        </div>
+   
+    <style>
+        .btnnew{
+            background: white;
+            margin:13px;
+            padding:1px;
+            width:107%;
+        }
+        .btn {
+            padding: 7px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132), 0 .6px 1.8px 0 rgba(0,0,0,.108);
+            border: 0 solid;
+            text-align: center;
+            transition: background 200ms ease-in;
+            background: #1bb9f5;
+            color: #fff !important;
+            width:45px;
+        }
+        th {
+            background: #fff;
+            border: 0 solid #ccc;
+            border-bottom-width: 0px;
+            border-bottom-width: 2px;
+            text-align: start;
+            color: #777;
+            vertical-align: top;
+            padding:5px;
+        }
+        td{
+            background: #fff;
+            border: 0 solid #ccc;
+            border-bottom-width: 0px;
+            border-bottom-width: 1px;
+            text-align: start;
+          padding:6px;
+            vertical-align: top;
+        }
+
+        table {
+            width: 108%;
+            border-collapse: collapse;
+        }
+        .table{
+            margin:170px;
+        }
+    </style>
+</body>
+</html>
+<script>
+    document.title = "دانشکده ها ";
+      document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function () {
+                window.open(this.getAttribute('data-url'), '_blank');
+            });
+    });
+</script>
