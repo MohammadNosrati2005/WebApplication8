@@ -1,27 +1,29 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace WebApplication8.Migrations
 {
     /// <inheritdoc />
-    public partial class University : Migration
+    public partial class Arian : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Universities",
+                name: "inputDatas",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    NameEnglish = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    FirstInput = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SecondInput = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Universities", x => x.Id);
+                    table.PrimaryKey("PK_inputDatas", x => x.Id);
                 });
         }
 
@@ -29,7 +31,7 @@ namespace WebApplication8.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Universities");
+                name: "inputDatas");
         }
     }
 }

@@ -1,12 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
-using WebApplication8.Models;
-
+﻿using InputApp.Models;
+using Microsoft.EntityFrameworkCore;
+using WebApplication8.Data;
+using Microsoft.EntityFrameworkCore.Design;
 var builder = WebApplication.CreateBuilder(args);
 
-
-// افزودن DbContext به سرویس‌ها
-builder.Services.AddDbContext<UContext>(options =>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
 
 
 

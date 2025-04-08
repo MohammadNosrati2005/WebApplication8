@@ -5,33 +5,33 @@
 }
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<div class="all">
-    <form asp-action="Create">
-        <div class="new">
-            <span>جدید</span>
-            <div class="cansel">
-                <span class="fa fa-times"></span>
+    <div class="all">
+        <form asp-action="Create">
+            <div class="new">
+                <span>جدید</span>
+                <div class="cansel">
+                    <span class="fa fa-times"></span>
+                </div>
             </div>
-        </div>
 
-        <div class="b">
-            <div style="margin: 30px 0 0 0;">
-                <span>
-                    نام
-                </span>
-                <input asp-for="FirstInput" class="namef" />
+            <div class="b">
+                <div style="margin: 30px 0 0 0;">
+                    <span>
+                        نام
+                    </span>
+                    <input asp-for="FirstInput" class="namef" />
+                </div>
+                <div style=" margin:25px 0 0 0">
+                    <span>نام به لاتین</span>
+                    <input asp-for="SecondInput" class="namel" type="text" />
+                </div>
             </div>
-            <div style=" margin:25px 0 0 0">
-                <span>نام به لاتین</span>
-                <input asp-for="SecondInput" class="namel" type="text" />
+            <div class="end">
+                <button type="submit" class="save"> ذخیره</button>
             </div>
-        </div>
-        <div class="end">
-            <button type="submit" class="save"> ذخیره</button>
-        </div>
-    </form>
-
-</div>
+        </form>
+        
+    </div>
 
 <style>
     .b {

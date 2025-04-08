@@ -36,6 +36,11 @@ namespace WebApplication8.Controllers
         {
             return View();
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
         }
     }
 
